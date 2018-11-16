@@ -3,14 +3,14 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
-		"postcss": true,
+		"postcss": false,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.7",
-	"appid": "wx3791c5d1fefa30cc",
-	"projectname": "mall",
+	"libVersion": "2.4.0",
+	"appid": "wxf8829d20ab2bfbd5",
+	"projectname": "test",
 	"scripts": {},
 	"condition": {
 		"search": {

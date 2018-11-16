@@ -46,7 +46,7 @@ App({
         }
       }
     })
-    // 判断是否登录 
+    // 判断是否登录
     let token = wx.getStorageSync('token');
     if (!token) {
       // that.goLoginPageTimeOut()
@@ -125,7 +125,7 @@ App({
     subDomain: "tz", // 如果你的域名是： https://api.it120.cc/abcd 那么这里只要填写 abcd
     version: "4.1.0",
     note:'增加小程序购物单支持',
-    appid: "wx3791c5d1fefa30cc", // 您的小程序的appid
+    appid: "wxa46b09d413fbcaff", // 您的小程序的appid
     shareProfile: '百款精品商品，总有一款适合您' // 首页转发的时候话术
   }
   /*
