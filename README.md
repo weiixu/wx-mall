@@ -19,12 +19,9 @@
 
 ## 使用说明
 
-> 1、[申请后台账号/获取专属域名](https://www.it120.cc/info/wxapp/115)
+> [申请后台账号/获取专属域名]
 >
-> 2、开通商城模块
-> > <img src="https://cdn.it120.cc/apifactory/2018/11/14/b61fe6ffb2460f7e4554758b394814f5.png">
->
-> 3、修改源码中  app.js 文件
+> 修改源码中  app.js 文件
 > > > globalData:{
 >  userInfo:null,
 >  subDomain:"mall"
@@ -32,9 +29,9 @@
 > >
 > > > subDomain 中的 mall 为上面您注册开通的域名
 >
-> 4、[设置小程序合法服务器域名](https://www.it120.cc/info/wxapp/116)
+> [设置小程序合法服务器域名](https://www.domain.com)
 >
-> 5、重启您的小程序开发工具，完成
+> 重启您的小程序开发工具，完成
 
 ## 常见问题
 

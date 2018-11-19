@@ -12,12 +12,20 @@
         <image class="wave wave-bg" src="/images/more/wave.png" mode="aspectFill"></image>
       </view>
       <view class="bd">
-         <image class="smalltitle" src="/images/more/confirm-word1.png"></image>
+        <image class="smalltitle" src="/images/more/confirm-word1.png"></image>
         <view class="confirm-btn" bindtap='goToIndex'>
-          <text >进入店铺</text>
+          <text>进入店铺</text>
         </view>
-        <text class="copyright">@qindiandadudu 贡献本页代码</text>
+        <text class="copyright">@weiixu</text>
       </view>
     </view>
   </block>
+  <view class="authorize-box" wx:if="{{showAuthorize}}">
+    <view class="authorize-body">
+      <form bindsubmit="bindSave">
+        <view class="authorize-text">你好！欢迎来到商城。</view>
+        <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="authorize-btn">微信授权</button>
+      </form>
+    </view>
+  </view>
 </view>

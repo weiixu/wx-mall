@@ -216,8 +216,8 @@ swiper-item image {
    border-radius:5px 5px;
 }
 .search-icon{
-  width: 40rpx;
-  height: 40rpx;
+  width: 30rpx;
+  height: 30rpx;
   margin-right: 20rpx;
 }
 .search-input{
@@ -228,7 +228,7 @@ swiper-item image {
   width: 150rpx;
   height: 70rpx;
   margin-right: 0rpx;
-  background-color:blueviolet;
+  background-color:#666;
   font-size: 28rpx;
   align-items: center;
   border-top-left-radius: 0rpx;
