@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="market-header">
+    <image class="user"></image>
+    <view class="choose"></view>
+    <image class="search"></image>
+  </view>
+  <view class="market-content">
+    <view class="market-tab">
+      <view class="name">名称</view>
+      <view class="latest">最新</view>
+      <view class="updown">涨幅</view>
+      <view class="volume">成交量</view>
+    </view>
+    <view class="market-body">
+    <block wx:for="{{dataList}}" wx:key="*this">
+      <view class="body-row {{ index%2 == 0 ? 'odd-row' : '' }}">
+        <view class="row-name">{{item.name}}</view>
+        <view class="roe-latest {{item.updown > 0 ? 'juice-row' : 'lime-row'}}">{{item.last}}</view>
+        <view class="row-updown {{item.updown > 0 ? 'juice-row' : 'lime-row'}}">{{item.updown}}</view>
+        <view class="row-volume">{{item.volume}}</view>
+      </view>
+      </block>
+    </view>
+  </view>
+</view>

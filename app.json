@@ -17,7 +17,8 @@
     "pages/withdraw/index",
     "pages/kanjia/index",
     "pages/authorize/index",
-    "pages/score-excharge/index"
+    "pages/score-excharge/index",
+    "pages/market/index"
   ],
   "window":
   {
@@ -54,10 +55,10 @@
       "text": "购物车"
     },
     {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/market/index",
       "iconPath": "images/nav/order-off.png",
       "selectedIconPath": "images/nav/order-on.png",
-      "text": "社区"
+      "text": "行情"
     },
     {
       "pagePath": "pages/my/index",
