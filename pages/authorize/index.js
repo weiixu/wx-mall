@@ -105,16 +105,16 @@ Page({
               that.registerUser();
               return;
             }
-            if (res.data.code != 0) {
-              // 登录错误
-              wx.hideLoading();
-              wx.showModal({
-                title: '提示',
-                content: '无法登录，请重试',
-                showCancel: false
-              })
-              return;
-            }
+            // if (res.data.code != 0) {
+            //   // 登录错误
+            //   wx.hideLoading();
+            //   wx.showModal({
+            //     title: '提示',
+            //     content: '无法登录，请重试',
+            //     showCancel: false
+            //   })
+            //   return;
+            // }
             wx.setStorageSync('token', res.data.data.token)
             wx.setStorageSync('uid', res.data.data.uid)
             // 回到原来的地方放
@@ -129,8 +129,10 @@ Page({
     wx.login({
       success: function (res) {
         var code = res.code; // 微信登录接口返回的 code 参数，下面注册接口需要用到
+        console.log(res)
         wx.getUserInfo({
           success: function (res) {
+            console.log(res)
             var iv = res.iv;
             var encryptedData = res.encryptedData;
             // 下面开始调用注册接口
